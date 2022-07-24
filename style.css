@@ -175,4 +175,21 @@ div{
 		margin-bottom: 20px;
 	}
 }
-
+/*prue**/
+table > tbody:empty {
+    position: relative;
+    display: table-caption;
+    caption-side: bottom;
+    min-height: 50px;
+    background-color: rgb(240,240,240);
+    text-align: center;
+}
+table > tbody:empty:before {
+    content: 'SIN DATOS';
+    position: absolute;
+    font-size: 12px;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
